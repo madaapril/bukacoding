@@ -1,0 +1,81 @@
+:root {
+    --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+    --brand-color: #56a7fe;
+    --brand-dark: #3a8ee6;
+    --brand-light: #e6f2ff;
+    --background: #f8fbff;
+    --foreground: #1e293b;
+}
+
+body {
+    font-family: var(--font-sans);
+    background-color: var(--background);
+    color: var(--foreground);
+}
+
+/* body {
+    background: var(--background);
+    color: var(--color-gray-700);
+} */
+
+/* .container {
+    max-width: calc(1150px + 10vw);
+    margin: 0 auto;
+    padding: 0 6vw;
+} */
+
+.text-brand {
+    color: var(--brand-color) !important;
+}
+
+.bg-brand {
+    background-color: var(--brand-color) !important;
+}
+
+.btn-brand {
+    background-color: var(--brand-color);
+    border-color: var(--brand-color);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-brand:hover {
+    background-color: var(--brand-dark);
+    border-color: var(--brand-dark);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(86, 167, 254, 0.3);
+}
+
+.login-card {
+    border: none;
+    border-radius: 24px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.form-control {
+    padding: 0.75rem 1rem;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    background-color: #fcfdfe;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 4px rgba(86, 167, 254, 0.15);
+    border-color: var(--brand-color);
+}
+
+/* tr {
+    border-color: var(--color-gray-300);
+}
+
+.btn {
+  border-radius: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+} */
