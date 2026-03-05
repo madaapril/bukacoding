@@ -1,0 +1,20 @@
+# IDE & Editor
+.vscode/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# CI4 writable (logs, cache, session, uploads)
+apps/writable/logs/
+apps/writable/cache/
+apps/writable/session/
+apps/writable/uploads/
+
+# Composer
+apps/vendor/
+
+# OS
+.DS_Store
+Thumbs.db
