@@ -10,7 +10,7 @@
     </div>
 </div>
 
-<div class="card border-0 shadow-sm rounded-2">
+<div class="card border-0 shadow-sm rounded-4">
     <div class="card-header bg-white border-bottom-0 pt-4 pb-0 px-4 rounded-top-4">
         <ul class="nav nav-underline fs-6 gap-3" id="pengeluaranTab" role="tablist">
             <li class="nav-item" role="presentation">
@@ -159,7 +159,7 @@
                 <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-3 g-3" id="kategoriContainer">
                     <!-- Kategori 1 -->
                     <div class="col kategori-item">
-                        <div class="card border border-light shadow-sm rounded-2 h-100 list-item-hover transition-all">
+                        <div class="card border border-light shadow-sm rounded-4 h-100 list-item-hover transition-all">
                             <div class="card-body p-4 d-flex align-items-center justify-content-between">
                                 <div class="d-flex align-items-center gap-3">
                                     <div class="icon-box-primary rounded-circle d-flex align-items-center justify-content-center" style="width: 48px; height: 48px;">
@@ -188,7 +188,7 @@
 
                     <!-- Kategori 2 -->
                     <div class="col kategori-item">
-                        <div class="card border border-light shadow-sm rounded-2 h-100 list-item-hover transition-all">
+                        <div class="card border border-light shadow-sm rounded-4 h-100 list-item-hover transition-all">
                             <div class="card-body p-4 d-flex align-items-center justify-content-between">
                                 <div class="d-flex align-items-center gap-3">
                                     <div class="icon-box-primary rounded-circle d-flex align-items-center justify-content-center" style="width: 48px; height: 48px;">
@@ -259,10 +259,10 @@
     </div>
 </div>
 
-<!-- Modal Item Pengeluaran (Tambah/Edit) -->
+<!-- Modal Menu (Tambah/Edit) -->
 <div class="modal fade" id="itemModal" tabindex="-1" aria-labelledby="itemModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content border-0 shadow rounded-4">
+        <div class="modal-content border-0 shadow rounded-4 p-2">
             <div class="modal-header border-bottom-0 pb-0">
                 <h5 class="modal-title fw-bold" id="itemModalLabel">Tambah Menu Baru</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -316,8 +316,8 @@
 
 <!-- Modal Kategori (Tambah/Edit) -->
 <div class="modal fade" id="kategoriModal" tabindex="-1" aria-labelledby="kategoriModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-sm">
-        <div class="modal-content border-0 shadow rounded-4">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 shadow rounded-4 p-2">
             <div class="modal-header border-bottom-0 pb-0">
                 <h5 class="modal-title fw-bold" id="kategoriModalLabel">Tambah Kategori Baru</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -328,6 +328,59 @@
                     <div class="mb-4">
                         <label for="namaKategori" class="form-label fw-medium text-dark">Nama Kategori</label>
                         <input type="text" class="form-control bg-light border-0 py-2 px-3 rounded-3" id="namaKategori" placeholder="Contoh: Operasional" required>
+                    </div>
+                    <div class="mb-4">
+                        <label class="form-label fw-medium text-dark d-block">Pilih Icon</label>
+                        <div class="d-flex flex-wrap gap-2 p-3 bg-light rounded-3">
+                            <div class="icon-option">
+                                <input type="radio" name="iconKategori" id="icon1" value="ri-price-tag-3-line" class="btn-check" checked>
+                                <label class="btn btn-outline-primary-custom rounded-circle p-0 d-flex align-items-center justify-content-center" for="icon1" style="width: 40px; height: 40px;">
+                                    <i class="ri-price-tag-3-line fs-5"></i>
+                                </label>
+                            </div>
+                            <div class="icon-option">
+                                <input type="radio" name="iconKategori" id="icon2" value="ri-shopping-basket-2-line" class="btn-check">
+                                <label class="btn btn-outline-primary-custom rounded-circle p-0 d-flex align-items-center justify-content-center" for="icon2" style="width: 40px; height: 40px;">
+                                    <i class="ri-shopping-basket-2-line fs-5"></i>
+                                </label>
+                            </div>
+                            <div class="icon-option">
+                                <input type="radio" name="iconKategori" id="icon3" value="ri-gas-station-line" class="btn-check">
+                                <label class="btn btn-outline-primary-custom rounded-circle p-0 d-flex align-items-center justify-content-center" for="icon3" style="width: 40px; height: 40px;">
+                                    <i class="ri-gas-station-line fs-5"></i>
+                                </label>
+                            </div>
+                            <div class="icon-option">
+                                <input type="radio" name="iconKategori" id="icon4" value="ri-truck-line" class="btn-check">
+                                <label class="btn btn-outline-primary-custom rounded-circle p-0 d-flex align-items-center justify-content-center" for="icon4" style="width: 40px; height: 40px;">
+                                    <i class="ri-truck-line fs-5"></i>
+                                </label>
+                            </div>
+                            <div class="icon-option">
+                                <input type="radio" name="iconKategori" id="icon5" value="ri-hammer-line" class="btn-check">
+                                <label class="btn btn-outline-primary-custom rounded-circle p-0 d-flex align-items-center justify-content-center" for="icon5" style="width: 40px; height: 40px;">
+                                    <i class="ri-hammer-line fs-5"></i>
+                                </label>
+                            </div>
+                            <div class="icon-option">
+                                <input type="radio" name="iconKategori" id="icon6" value="ri-lightbulb-line" class="btn-check">
+                                <label class="btn btn-outline-primary-custom rounded-circle p-0 d-flex align-items-center justify-content-center" for="icon6" style="width: 40px; height: 40px;">
+                                    <i class="ri-lightbulb-line fs-5"></i>
+                                </label>
+                            </div>
+                            <div class="icon-option">
+                                <input type="radio" name="iconKategori" id="icon7" value="ri-user-settings-line" class="btn-check">
+                                <label class="btn btn-outline-primary-custom rounded-circle p-0 d-flex align-items-center justify-content-center" for="icon7" style="width: 40px; height: 40px;">
+                                    <i class="ri-user-settings-line fs-5"></i>
+                                </label>
+                            </div>
+                            <div class="icon-option">
+                                <input type="radio" name="iconKategori" id="icon8" value="ri-bank-card-line" class="btn-check">
+                                <label class="btn btn-outline-primary-custom rounded-circle p-0 d-flex align-items-center justify-content-center" for="icon8" style="width: 40px; height: 40px;">
+                                    <i class="ri-bank-card-line fs-5"></i>
+                                </label>
+                            </div>
+                        </div>
                     </div>
                     <div class="d-grid mt-2">
                         <button type="submit" class="btn btn-primary-custom text-white rounded-pill py-2" id="btnSaveKategori">Simpan</button>
@@ -390,7 +443,7 @@
                     previous: "Sebelumnya"
                 }
             },
-            dom: '<"table-responsive border rounded-2 mb-3"t><"bottom d-flex align-items-center justify-content-between text-muted small"ip><"clear">',
+            dom: '<"table-responsive border rounded-4 mb-3"t><"bottom d-flex align-items-center justify-content-between text-muted small"ip><"clear">',
             columnDefs: [{
                     orderable: false,
                     targets: 1

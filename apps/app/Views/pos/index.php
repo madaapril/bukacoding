@@ -76,7 +76,7 @@
     <!-- Right Column: Cart -->
     <div class="col-lg-4">
         <div class="card border-0 shadow-sm rounded-4 h-100 d-flex flex-column">
-            <div class="card-header bg-white border-0 pt-4 px-4 d-flex justify-content-between align-items-center">
+            <div class="card-header rounded-4 bg-white border-0 pt-4 px-4 d-flex justify-content-between align-items-center">
                 <h5 class="fw-bold text-dark mb-0">Pesanan Baru</h5>
                 <button class="btn btn-light btn-sm rounded-circle text-danger" id="clearCart" title="Clear Cart">
                     <i class="ri-delete-bin-line"></i>
@@ -98,7 +98,7 @@
                 </div>
             </div>
 
-            <div class="card-footer bg-white border-0 p-4 pt-0 mt-auto">
+            <div class="card-footer rounded-4 bg-white border-0 p-4 pt-0 mt-auto">
                 <div class="border-top pt-3 mb-4">
                     <div class="d-flex justify-content-between mb-2">
                         <span class="text-muted">Subtotal</span>

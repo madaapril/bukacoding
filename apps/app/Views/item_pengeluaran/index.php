@@ -10,7 +10,7 @@
     </div>
 </div>
 
-<div class="card border-0 shadow-sm rounded-2">
+<div class="card border-0 shadow-sm rounded-4">
     <div class="card-header bg-white border-bottom-0 pt-4 pb-0 px-4 rounded-top-4">
         <ul class="nav nav-underline fs-6 gap-3" id="pengeluaranTab" role="tablist">
             <li class="nav-item" role="presentation">
@@ -149,7 +149,7 @@
                 <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-3 g-3" id="kategoriContainer">
                     <!-- Kategori 1 -->
                     <div class="col category-card kategori-item" data-category-id="1" data-icon="ri-price-tag-3-line">
-                        <div class="card border border-light shadow-sm rounded-2 h-100 list-item-hover transition-all">
+                        <div class="card border border-light shadow-sm rounded-4 h-100 list-item-hover transition-all">
                             <div class="card-body p-4 d-flex align-items-center justify-content-between">
                                 <div class="d-flex align-items-center gap-3">
                                     <div class="icon-box-primary rounded-circle d-flex align-items-center justify-content-center" style="width: 48px; height: 48px;">
@@ -178,7 +178,7 @@
 
                     <!-- Kategori 2 -->
                     <div class="col category-card kategori-item" data-category-id="2" data-icon="ri-price-tag-3-line">
-                        <div class="card border border-light shadow-sm rounded-2 h-100 list-item-hover transition-all">
+                        <div class="card border border-light shadow-sm rounded-4 h-100 list-item-hover transition-all">
                             <div class="card-body p-4 d-flex align-items-center justify-content-between">
                                 <div class="d-flex align-items-center gap-3">
                                     <div class="icon-box-primary rounded-circle d-flex align-items-center justify-content-center" style="width: 48px; height: 48px;">
@@ -252,7 +252,7 @@
 <!-- Modal Item Pengeluaran (Tambah/Edit) -->
 <div class="modal fade" id="itemModal" tabindex="-1" aria-labelledby="itemModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content border-0 shadow rounded-4">
+        <div class="modal-content border-0 shadow rounded-4 p-2">
             <div class="modal-header border-bottom-0 pb-0">
                 <h5 class="modal-title fw-bold" id="itemModalLabel">Tambah Item Pengeluaran</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -287,7 +287,7 @@
 <!-- Modal Kategori (Tambah/Edit) -->
 <div class="modal fade" id="kategoriModal" tabindex="-1" aria-labelledby="kategoriModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content border-0 shadow rounded-4">
+        <div class="modal-content border-0 shadow rounded-4 p-2">
             <div class="modal-header border-bottom-0 pb-0">
                 <h5 class="modal-title fw-bold" id="kategoriModalLabel">Tambah Kategori Baru</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -386,7 +386,7 @@
                     previous: "Sebelumnya"
                 }
             },
-            dom: '<"table-responsive border rounded-2 mb-3"t><"bottom d-flex align-items-center justify-content-between text-muted small"ip><"clear">',
+            dom: '<"table-responsive border rounded-4 mb-3"t><"bottom d-flex align-items-center justify-content-between text-muted small"ip><"clear">',
             columnDefs: [{
                     orderable: false,
                     targets: 1

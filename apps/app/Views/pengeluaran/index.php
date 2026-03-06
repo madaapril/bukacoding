@@ -14,8 +14,8 @@
 
 <!-- Statistik Ringkas -->
 <div class="row g-3 mb-4">
-    <div class="col-12 col-md-4">
-        <div class="card border-0 shadow-sm rounded-3">
+    <div class="col-12 col-md-8 col-lg-6 col-xl-4">
+        <div class="card border-0 shadow-sm rounded-4">
             <div class="card-body p-3">
                 <div class="d-flex align-items-center gap-3">
                     <div class="icon-box-primary rounded-circle d-flex align-items-center justify-content-center" style="width: 45px; height: 45px; background-color: rgba(86, 167, 254, 0.1); color: #56a7fe;">
@@ -31,8 +31,8 @@
     </div>
 </div>
 
-<div class="card border-0 shadow-sm rounded-2">
-    <div class="card-header bg-white border-bottom-0 pt-4 pb-2 px-4">
+<div class="card border-0 shadow-sm rounded-4">
+    <div class="card-header rounded-4 bg-white border-bottom-0 pt-4 pb-2 px-4">
         <div class="row g-3 align-items-center">
             <div class="col-12 col-md-4">
                 <div class="position-relative">

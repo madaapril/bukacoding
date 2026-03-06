@@ -85,8 +85,18 @@ div {
 
 .sidebar-heading {
   padding: 1.5rem 1.25rem;
+}
+
+.sidebar-heading a {
   display: flex;
   align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.sidebar-heading a:hover {
+  text-decoration: none;
+  color: inherit;
 }
 
 .sidebar-heading .logo {

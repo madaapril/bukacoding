@@ -1,9 +1,12 @@
 <div id="sidebar-wrapper">
     <div class="sidebar-heading">
-        <div class="logo">D</div>
-        <span>DIKEDAI POS</span>
+        <a href="<?= base_url('dashboard') ?>">
+            <div class="logo">D</div>
+            <span>DIKEDAI POS</span>
+        </a>
     </div>
     <div class="list-group list-group-flush">
+        <div class="menu-header">Menu</div>
         <a href="<?= base_url('dashboard') ?>" class="list-group-item <?= getSegment(1) == 'dashboard' ? 'active' : ''; ?>">
             <i class="ri-dashboard-2-line"></i> Dashboard
         </a>
