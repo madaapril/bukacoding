@@ -7,7 +7,7 @@
         <div id="sidebar-overlay"></div>
         <?= $this->include('layout/topbar'); ?>
 
-        <main class="container-fluid p-4">
+        <main class="container-xxl p-4">
             <?= $this->renderSection('content'); ?>
         </main>
 

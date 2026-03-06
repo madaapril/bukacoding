@@ -1,9 +1,9 @@
 <nav class="topbar">
     <div class="d-flex align-items-center">
-        <button class="btn btn-link text-dark p-0 me-3" id="menu-toggle">
-            <i class="fa-solid fa-bars fs-4"></i>
+        <button class="btn p-0 me-3" id="menu-toggle">
+            <i class="ri-menu-2-line fs-5"></i>
         </button>
-        <h5 class="m-0 fw-bold text-dark d-none d-sm-block">Dashboard</h5>
+        <h5 class="m-0 fw-bold d-none d-sm-block"><?= $title ?? '' ?></h5>
     </div>
 
     <div class="dropdown">
@@ -12,11 +12,11 @@
             <img src="https://ui-avatars.com/api/?name=User&background=56a7fe&color=fff" alt="Profile" class="profile-img">
         </div>
         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
-            <li><a class="dropdown-item" href="<?= base_url('profile') ?>"><i class="fa-solid fa-user"></i> Profil</a></li>
+            <li><a class="dropdown-item" href="<?= base_url('profil') ?>"><i class="ri-account-circle-line"></i> Profil</a></li>
             <li>
                 <hr class="dropdown-divider">
             </li>
-            <li><a class="dropdown-item text-danger" href="<?= base_url('logout') ?>"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+            <li><a class="dropdown-item" href="<?= base_url('logout') ?>"><i class="ri-logout-box-r-line"></i> Logout</a></li>
         </ul>
     </div>
 </nav>

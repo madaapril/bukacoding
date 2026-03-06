@@ -5,34 +5,34 @@
     </div>
     <div class="list-group list-group-flush">
         <a href="<?= base_url('dashboard') ?>" class="list-group-item <?= getSegment(1) == 'dashboard' ? 'active' : ''; ?>">
-            <i class="fa-solid fa-house"></i> Dashboard
+            <i class="ri-dashboard-2-line"></i> Dashboard
         </a>
 
         <div class="menu-header">Transaksi</div>
         <a href="<?= base_url('pos') ?>" class="list-group-item <?= getSegment(1) == 'pos' ? 'active' : ''; ?>">
-            <i class="fa-solid fa-cash-register"></i> POS
+            <i class="ri-shopping-cart-2-line"></i> Kasir
         </a>
         <a href="<?= base_url('pengeluaran') ?>" class="list-group-item <?= getSegment(1) == 'pengeluaran' ? 'active' : ''; ?>">
-            <i class="fa-solid fa-arrow-right-from-bracket"></i> Pengeluaran
+            <i class="ri-hand-coin-line"></i> Pengeluaran
         </a>
 
         <div class="menu-header">Master Data</div>
         <a href="<?= base_url('menu') ?>" class="list-group-item <?= getSegment(1) == 'menu' ? 'active' : ''; ?>">
-            <i class="fa-solid fa-utensils"></i> Menu
+            <i class="ri-restaurant-line"></i> Menu
         </a>
-        <a href="<?= base_url('kategori-menu') ?>" class="list-group-item <?= getSegment(1) == 'kategori-menu' ? 'active' : ''; ?>">
-            <i class="fa-solid fa-tags"></i> Kategori Menu
-        </a>
+        <!-- <a href="<?= base_url('kategori-menu') ?>" class="list-group-item <?= getSegment(1) == 'kategori-menu' ? 'active' : ''; ?>">
+            <i class="ri-price-tag-3-line"></i> Kategori Menu
+        </a> -->
         <a href="<?= base_url('item-pengeluaran') ?>" class="list-group-item <?= getSegment(1) == 'item-pengeluaran' ? 'active' : ''; ?>">
-            <i class="fa-solid fa-box"></i> Item Pengeluaran
+            <i class="ri-archive-line"></i> Item Pengeluaran
         </a>
-        <a href="<?= base_url('kategori-pengeluaran') ?>" class="list-group-item <?= getSegment(1) == 'kategori-pengeluaran' ? 'active' : ''; ?>">
-            <i class="fa-solid fa-layer-group"></i> Kategori Pengeluaran
-        </a>
+        <!-- <a href="<?= base_url('kategori-pengeluaran') ?>" class="list-group-item <?= getSegment(1) == 'kategori-pengeluaran' ? 'active' : ''; ?>">
+            <i class="ri-stack-line"></i> Kategori Pengeluaran
+        </a> -->
 
         <div class="menu-header">Pengaturan</div>
         <a href="<?= base_url('kedai') ?>" class="list-group-item <?= getSegment(1) == 'kedai' ? 'active' : ''; ?>">
-            <i class="fa-solid fa-store"></i> Kedai
+            <i class="ri-store-2-line"></i> Kedai
         </a>
     </div>
 </div>
