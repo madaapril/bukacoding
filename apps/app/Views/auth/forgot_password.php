@@ -56,7 +56,7 @@
             <img src="/assets/images/logo/logo-text-biru.png" width="200" alt="DIKEDAI">
         </div>
 
-        <div class="card login-card p-4 p-md-5">
+        <div class="card rounded-4 login-card p-4 p-md-5">
             <div class="card-body p-0">
                 <div class="mb-4">
                     <a href="<?= base_url('login') ?>" class="text-brand small text-decoration-none fw-medium">
@@ -85,9 +85,9 @@
             </div>
         </div>
 
-        <div class="text-center mt-5">
-            <p class="text-muted extra-small" style="font-size: 0.75rem;">&copy; <?= date('Y') ?> DIKEDAI POS. All rights reserved.</p>
-        </div>
+        <footer class="text-center mt-5">
+            <p class="extra-small" style="font-size: 0.75rem;">&copy; <?= date('Y') ?> DIKEDAI. All rights reserved.</p>
+        </footer>
     </div>
 
     <!-- Bootstrap 5 JS -->

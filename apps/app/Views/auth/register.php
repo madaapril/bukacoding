@@ -70,7 +70,7 @@
             <img src="/assets/images/logo/logo-text-biru.png" width="200" alt="DIKEDAI">
         </div>
 
-        <div class="card login-card p-4 p-md-5">
+        <div class="card rounded-4 login-card p-4 p-md-5">
             <div class="card-body p-0">
                 <h4 class="fw-bold mb-1">Mulai Gratis!</h4>
                 <p class="text-muted small mb-4">Buat akun bisnis Anda sekarang</p>
@@ -143,9 +143,9 @@
             </div>
         </div>
 
-        <div class="text-center mt-5">
-            <p class="text-muted extra-small" style="font-size: 0.75rem;">&copy; <?= date('Y') ?> DIKEDAI POS. All rights reserved.</p>
-        </div>
+        <footer class="text-center mt-5">
+            <p class="extra-small" style="font-size: 0.75rem;">&copy; <?= date('Y') ?> DIKEDAI. All rights reserved.</p>
+        </footer>
     </div>
 
     <!-- Bootstrap 5 JS -->

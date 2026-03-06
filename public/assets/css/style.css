@@ -10,6 +10,7 @@
 :root {
   --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
   --brand-color: #56a7fe;
+  --brand-dark: #489ef7;
   --primary-color: #56a7fe;
   --sidebar-bg: #ffffff;
   --sidebar-color: #6d7080;

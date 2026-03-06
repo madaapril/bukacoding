@@ -88,11 +88,11 @@
             <div class="absolute -top-10 -right-10 w-32 h-32 bg-brand/5 rounded-full blur-3xl"></div>
             <div class="absolute -bottom-10 -left-10 w-32 h-32 bg-brand/10 rounded-full blur-2xl"></div>
 
-            <h1 class="text-4xl md:text-5xl font-bold mb-6 gradient-text">
+            <h1 class="text-3xl md:text-5xl pb-2 font-bold mb-4 gradient-text">
                 Sedang Disiapkan
             </h1>
 
-            <p class="text-lg text-slate-500 mb-10 leading-relaxed">
+            <p class="text-md md:text-lg text-slate-500 mb-10 leading-relaxed">
                 Kami sedang meramu sesuatu yang luar biasa untuk mengoptimalkan operasional kedai Anda. Fitur ini akan segera hadir!
             </p>
 
@@ -107,11 +107,11 @@
 
             <!-- Action Button -->
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="https://dikedai.my.id" class="bg-brand hover:bg-brand-dark text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl hover:shadow-brand/20 flex items-center justify-center gap-2">
+                <a href="https://dikedai.my.id" class="bg-brand hover:bg-brand-dark text-white px-4 md:px-8 py-2 md:py-4 rounded-full font-semibold transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl hover:shadow-brand/20 flex items-center justify-center gap-2">
                     <i class="ri-arrow-left-line"></i>
                     Kembali
                 </a>
-                <button onclick="window.location.reload()" class="bg-white border border-slate-200 text-slate-600 hover:bg-slate-50 px-8 py-4 rounded-full font-semibold transition-all duration-300 flex items-center justify-center gap-2">
+                <button onclick="window.location.reload()" class="bg-white border border-slate-200 text-slate-600 hover:bg-slate-50 px-4 md:px-8 py-2 md:py-4 rounded-full font-semibold transition-all duration-300 flex items-center justify-center gap-2">
                     <i class="ri-refresh-line"></i>
                     Cek Pembaruan
                 </button>
@@ -120,7 +120,7 @@
 
         <!-- Footer Info -->
         <div class="mt-12 text-slate-400 text-sm animate__animated animate__fadeIn animate__delay-1s">
-            <p>&copy; <?= date('Y') ?> Dikedai POS. All rights reserved.</p>
+            <p>&copy; <?= date('Y') ?> DIKEDAI. All rights reserved.</p>
         </div>
     </div>
 </body>
