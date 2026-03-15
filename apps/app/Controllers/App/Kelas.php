@@ -104,13 +104,6 @@ class Kelas extends BaseController
             'mobile' => $user->hp ?? '000000000000',
             'description' => 'Pembayaran Kelas ' . ($kelas->nama ?? 'Online'),
             'amount' => (int)$kelas->harga,
-            // 'items' => [
-            //     [
-            //         'name' => 'Kelas ' . ($kelas->nama ?? 'Online'),
-            //         'quantity' => 1,
-            //         'price' => $kelas->harga,
-            //     ]
-            // ],
             'expiredAt' => date('Y-m-d H:i:s', strtotime('+1 day')), //Invoice expiration time in ISO 8601 format (UTC).
             'redirectUrl' => base_url('app/kelas/' . $kelas_id . '/terbayar'),
         ];
@@ -118,7 +111,7 @@ class Kelas extends BaseController
         $ch = curl_init($url);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_HTTPHEADER, [
-            'Authorization: Bearer ' . MAYAR_API_KEY,
+            'Authorization: Bearer ' . env('MAYAR_API_KEY'),
             'Content-Type: application/json',
         ]);
         curl_setopt($ch, CURLOPT_POST, true);
@@ -168,7 +161,7 @@ class Kelas extends BaseController
         $ch = curl_init($url);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_HTTPHEADER, [
-            'Authorization: Bearer ' . MAYAR_API_KEY,
+            'Authorization: Bearer ' . env('MAYAR_API_KEY'),
             'Content-Type: application/json',
         ]);
         $response = curl_exec($ch);
