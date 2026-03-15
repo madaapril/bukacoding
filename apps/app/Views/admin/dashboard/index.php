@@ -25,7 +25,7 @@
     }
 </style>
 
-<h6 class="mb-3 fw-light text-secondary">Hari Ini</h6>
+<!-- <h6 class="mb-3 fw-light text-secondary">Hari Ini</h6> -->
 <div class="row g-3 card-statistik">
     <!-- <div class="col-12 col-lg-6 col-xl-3">
         <div class="card shadow-soft rounded-3 p-3 bg-white border-0">

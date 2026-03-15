@@ -258,7 +258,7 @@
                     <?php foreach ($materi as $index => $m) : ?>
                         <?php
                         $is_clickable = true;
-                        if ($index > 0 && empty($materi[$index - 1]->completed_at) && empty($m->completed_at)) {
+                        if (($index > 0 && empty($materi[$index - 1]->completed_at) && empty($m->completed_at)) || ($kelas->harga > 0 && empty($kelas->mulai_kelas))) {
                             $is_clickable = false;
                         }
                         ?>
