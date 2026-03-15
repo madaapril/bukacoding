@@ -11,7 +11,7 @@ class Dashboard extends BaseController
         $data = [
             'title' => 'Dashboard',
             'kelas' => $this->db->table('kelas')->countAll(),
-            'peserta' => $this->db->table('users')->where('role', 'peserta')->countAll(),
+            'peserta' => $this->db->table('users')->where('role', 'peserta')->countAllResults(),
         ];
 
         return view('admin/dashboard/index', $data);
