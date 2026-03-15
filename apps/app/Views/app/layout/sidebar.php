@@ -1,6 +1,6 @@
 <div id="sidebar-wrapper">
     <div class="sidebar-heading">
-        <a href="<?= base_url('dashboard') ?>">
+        <a href="<?= base_url('app/dashboard') ?>">
             <div class="logo">B</div>
             <span>BukaCoding</span>
         </a>
