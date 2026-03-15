@@ -49,7 +49,6 @@ if (getcwd() . DIRECTORY_SEPARATOR !== FCPATH) {
 // LOAD OUR PATHS CONFIG FILE
 // app/ folder is now inside apps/, which is a sibling of public/
 require FCPATH . '../apps/app/Config/Paths.php';
-// ^^^ Changed: app is inside apps/ folder
 
 $paths = new Paths();
 

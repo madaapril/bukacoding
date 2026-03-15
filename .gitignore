@@ -11,9 +11,14 @@ apps/writable/logs/
 apps/writable/cache/
 apps/writable/session/
 apps/writable/uploads/
+apps/system/
+apps/tests/
+apps/writable/
 
 # Composer
 apps/vendor/
+
+public/uploads/
 
 # OS
 .DS_Store
