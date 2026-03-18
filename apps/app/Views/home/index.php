@@ -473,14 +473,20 @@
                     <!-- Class Card 1 -->
                     <div class="class-card rounded-3xl overflow-hidden group cursor-pointer">
                         <!-- Thumbnail -->
-                        <div class="relative h-44 bg-gradient-to-br from-violet-900/60 to-purple-900/40 flex items-center justify-center">
+                        <div class="relative h-44 <?= !empty($data->gambar) ? '' : 'bg-gradient-to-br from-violet-900/60 to-purple-900/40' ?> flex items-center justify-center">
+                            <?php if (!empty($data->gambar)): ?>
+                                <img src="<?= base_url('uploads/kelas/' . $data->gambar) ?>" alt="<?= esc($data->nama) ?>" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <!-- Purple Overlay for Image -->
+                                <div class="absolute inset-0 bg-gradient-to-br from-violet-900/50 to-purple-900/30"></div>
+                            <?php else: ?>
+                                <i class="ri-bubble-chart-line text-7xl text-violet-400/30"></i>
+                            <?php endif; ?>
                             <div class="absolute inset-0 bg-gradient-to-b from-transparent to-card/60"></div>
-                            <i class="ri-bubble-chart-line text-7xl text-violet-400/30"></i>
                             <div class="absolute top-3 left-3">
-                                <span class="tag-purple text-xs font-bold px-2.5 py-1 rounded-lg"><?= $data->nama_kategori ?></span>
+                                <span class="bg-violet-600 text-white text-xs font-bold px-2.5 py-1 rounded-lg shadow-sm"><?= $data->nama_kategori ?></span>
                             </div>
                             <div class="absolute top-3 right-3">
-                                <span class="bg-green-500/20 text-green-400 border border-green-500/30 text-xs font-bold px-2.5 py-1 rounded-lg"><?= $data->harga == 0 ? 'Gratis' : 'Rp ' . number_format($data->harga, 0, ',', '.') ?></span>
+                                <span class="bg-emerald-600 text-white text-xs font-bold px-2.5 py-1 rounded-lg shadow-sm"><?= $data->harga == 0 ? 'Gratis' : 'Rp ' . number_format($data->harga, 0, ',', '.') ?></span>
                             </div>
                             <!-- <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                 <div class="w-14 h-14 bg-primary/80 rounded-full flex items-center justify-center backdrop-blur-sm">
