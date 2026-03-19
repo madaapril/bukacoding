@@ -81,6 +81,8 @@ class Auth extends BaseController
                 'email' => $email,
                 'name' => $name,
                 'password' => password_hash($password, PASSWORD_DEFAULT),
+                'created_at' => sekarang(),
+                'updated_at' => sekarang(),
             ];
 
             $this->db->table('users')->insert($data);
